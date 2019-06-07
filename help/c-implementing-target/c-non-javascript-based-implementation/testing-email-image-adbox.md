@@ -39,6 +39,6 @@ Where the below values are specific to you:
 |clientcode|Your company's client code. Find this in your at.js or mbox.js listed as `clientCode='yourclientcode'`. This is all lower case and has no special characters.|
 |image|The offer type. It is always "image" for graphic ads and "page" for redirectors.|
 |email_header|The name of the adbox.|
-|`http%3A%2F%2Fwww.domain.com%2Fheader.jpg`|The adbox's default content. This must be an absolute reference and must be URL encoded.|
+|`mboxDefault={http%3A%2F%2Fwww.domain.com%2Fheader.jpg}`|Required. Replace the URL with appropriate default content for the adbox. This must be an absolute reference and must be URL encoded.|
 |`mboxXDomain=disabled`|Tells  Target to not attempt to set a cookie.|
 |`mboxSession=123456` and `mboxPC=123456`|Two values required by  Target to merge this user's profile with the existing profile for your site. 123456 is the unique identifier generated per email. Dynamically insert this value into every adbox and redirector URL. This number must be unique for each email sent to each person. If a weekly email is sent to 1,000 people, 1,000 unique IDs need to be generated.<br>The unique identifier per email needs to be assigned to the  mboxSession and  mboxPC in each adbox and redirector URL. The recommended format for this identifier is  timestamp-NNNNN where  NNNNN is a random 5-digit number, but any alphanumeric format will work. Some mass e-mail services and any programming language are capable of generating this unique identifier.|
